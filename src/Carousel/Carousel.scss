@@ -1,0 +1,49 @@
+.swiper-container {
+  overflow: hidden;
+  touch-action: pan-y;
+
+  .row {
+    .swiper-list {
+      min-width: 100%;
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      transition: transform 0.3s ease-out;
+
+      .cards {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 1.9rem;
+      }
+    }
+  }
+
+  .swiper-list.is-swiping {
+    transition: none;
+  }
+
+  .swiper-indicator {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 2rem 0 0 0;
+    padding: 0;
+  }
+
+  .swiper-indicator-item {
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .swiper-indicator-item.active {
+    background-color: hsla(0, 0%, 39%, 0.5);
+  }
+}

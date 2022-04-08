@@ -1,0 +1,20 @@
+.swiper-item {
+  width: 100%;
+  flex-shrink: 0;
+
+  .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 18rem;
+    height: 10rem;
+
+    padding-left: 1.56rem;
+    padding-right: 1.123rem;
+
+    backdrop-filter: blur(10px);
+    background: white;
+    border-radius: 20px;
+  }
+}
